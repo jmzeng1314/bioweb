@@ -1,9 +1,9 @@
 library(shinydashboard)
 library(shiny)
 options(stringsAsFactors = F) 
-
+#options(encoding = 'UTF-8')
 page_Home <- fluidPage(
-  
+  includeMarkdown("ucsc_intro.md")
 )
 page_Data <- fluidPage(
   
@@ -11,6 +11,7 @@ page_Data <- fluidPage(
 page_About <- fluidPage(
   
 )
+
 header=dashboardHeader(
   title =p("UCSC数据库！"
            ,style="font-size:90%;font-style:oblique"
